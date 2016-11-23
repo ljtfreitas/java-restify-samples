@@ -1,4 +1,4 @@
-package com.restify.spring.sample.client;
+package com.github.ljtfreitas.restify.spring.sample.api;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
@@ -12,37 +12,37 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.restify.http.client.Headers;
-import com.restify.http.spring.contract.FormParameters;
-import com.restify.spring.sample.api.MyApiResponse;
+import com.github.ljtfreitas.restify.http.client.Headers;
+import com.github.ljtfreitas.restify.http.spring.contract.FormParameters;
+import com.github.ljtfreitas.restify.spring.configure.Restifyable;
 
-@RequestMapping("/api")
+@Restifyable(name = "myApi", description = "My Api")
 public interface MyApi {
 
-	@GetMapping("/{id}")
+	@GetMapping("/api/{id}")
 	public MyApiResponse get(@PathVariable String id);
 
-	@GetMapping("/{id}")
+	@GetMapping("/api/{id}")
 	public ListenableFuture<MyApiResponse> getAsync(@PathVariable String id);
 
-	@PostMapping(produces = "application/x-www-form-urlencoded")
+	@PostMapping(path = "/api", produces = "application/x-www-form-urlencoded")
 	public MyApiResponse post(@RequestBody FormParameters parameters);
 
-	@PutMapping(produces = "application/x-www-form-urlencoded")
+	@PutMapping(path = "/api", produces = "application/x-www-form-urlencoded")
 	public MyApiResponse put(@RequestBody FormParameters parameters);
 
-	@DeleteMapping("/{id}")
+	@DeleteMapping("/api/{id}")
 	public MyApiResponse delete(@PathVariable String id);
 
-	@RequestMapping(method = RequestMethod.HEAD)
+	@RequestMapping(path = "/api", method = RequestMethod.HEAD)
 	public Headers head();
 
-	@RequestMapping(method = RequestMethod.OPTIONS)
+	@RequestMapping(path = "/api", method = RequestMethod.OPTIONS)
 	public HttpHeaders options();
 
-	@PostMapping(path = "/upload", produces = "multipart/form-data")
+	@PostMapping(path = "/api/upload", produces = "multipart/form-data")
 	public String upload(@RequestBody FormParameters parameters);
 
-	@GetMapping("/{id}")
+	@GetMapping("/api/{id}")
 	public ResponseEntity<MyApiResponse> getResponseObject(@PathVariable String id);
 }

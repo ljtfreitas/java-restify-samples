@@ -1,4 +1,4 @@
-package com.restify.spring.sample.client;
+package com.github.ljtfreitas.restify.spring.sample.client;
 
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpHeaders;
@@ -6,16 +6,16 @@ import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.ListenableFutureCallback;
 import org.springframework.web.client.RestTemplate;
 
-import com.restify.http.RestifyProxyBuilder;
-import com.restify.http.client.Headers;
-import com.restify.http.spring.client.call.exec.HttpHeadersEndpointCallExecutableFactory;
-import com.restify.http.spring.client.call.exec.ListenableFutureEndpointCallExecutableFactory;
-import com.restify.http.spring.client.call.exec.ResponseEntityEndpointCallExecutableFactory;
-import com.restify.http.spring.client.request.RestOperationsEndpointRequestExecutor;
-import com.restify.http.spring.contract.FormParameters;
-import com.restify.http.spring.contract.FormParameters.Parameter;
-import com.restify.http.spring.contract.SpringWebContractReader;
-import com.restify.spring.sample.api.MyApiResponse;
+import com.github.ljtfreitas.restify.http.RestifyProxyBuilder;
+import com.github.ljtfreitas.restify.http.client.Headers;
+import com.github.ljtfreitas.restify.http.spring.client.call.exec.HttpHeadersEndpointCallExecutableFactory;
+import com.github.ljtfreitas.restify.http.spring.client.call.exec.ListenableFutureEndpointCallExecutableFactory;
+import com.github.ljtfreitas.restify.http.spring.client.call.exec.ResponseEntityEndpointCallExecutableFactory;
+import com.github.ljtfreitas.restify.http.spring.client.request.RestOperationsEndpointRequestExecutor;
+import com.github.ljtfreitas.restify.http.spring.contract.FormParameters;
+import com.github.ljtfreitas.restify.http.spring.contract.FormParameters.Parameter;
+import com.github.ljtfreitas.restify.http.spring.contract.SpringWebContractReader;
+import com.github.ljtfreitas.restify.spring.sample.api.MyApiResponse;
 
 public class MyApiClient {
 

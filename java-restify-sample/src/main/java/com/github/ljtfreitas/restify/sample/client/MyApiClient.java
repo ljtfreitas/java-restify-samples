@@ -1,18 +1,18 @@
-package com.restify.sample.client;
+package com.github.ljtfreitas.restify.sample.client;
 
 import java.util.Optional;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.restify.http.RestifyProxyBuilder;
-import com.restify.http.client.call.EndpointCall;
-import com.restify.http.client.request.async.EndpointCallCallback;
-import com.restify.http.client.request.async.EndpointCallSuccessCallback;
-import com.restify.http.client.response.EndpointResponse;
-import com.restify.http.contract.ContentType;
-import com.restify.http.contract.MultipartFile;
-import com.restify.http.contract.MultipartParameters;
-import com.restify.sample.api.MyApiResponse;
+import com.github.ljtfreitas.restify.http.RestifyProxyBuilder;
+import com.github.ljtfreitas.restify.http.client.call.EndpointCall;
+import com.github.ljtfreitas.restify.http.client.request.async.EndpointCallCallback;
+import com.github.ljtfreitas.restify.http.client.request.async.EndpointCallSuccessCallback;
+import com.github.ljtfreitas.restify.http.client.response.EndpointResponse;
+import com.github.ljtfreitas.restify.http.contract.ContentType;
+import com.github.ljtfreitas.restify.http.contract.MultipartFile;
+import com.github.ljtfreitas.restify.http.contract.MultipartParameters;
+import com.github.ljtfreitas.restify.sample.api.MyApiResponse;
 
 public class MyApiClient {
 

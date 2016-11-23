@@ -1,4 +1,4 @@
-package com.restify.sample.api;
+package com.github.ljtfreitas.restify.spring.sample.api;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

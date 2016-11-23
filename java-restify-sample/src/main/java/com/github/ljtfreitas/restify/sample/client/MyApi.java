@@ -1,26 +1,26 @@
-package com.restify.sample.client;
+package com.github.ljtfreitas.restify.sample.client;
 
 import java.util.Optional;
 import java.util.function.BiConsumer;
 
-import com.restify.http.client.Headers;
-import com.restify.http.client.call.EndpointCall;
-import com.restify.http.client.request.async.EndpointCallCallback;
-import com.restify.http.client.request.async.EndpointCallSuccessCallback;
-import com.restify.http.client.response.EndpointResponse;
-import com.restify.http.contract.BodyParameter;
-import com.restify.http.contract.CallbackParameter;
-import com.restify.http.contract.Delete;
-import com.restify.http.contract.Get;
-import com.restify.http.contract.Head;
-import com.restify.http.contract.Header;
-import com.restify.http.contract.MultipartParameters;
-import com.restify.http.contract.Options;
-import com.restify.http.contract.Path;
-import com.restify.http.contract.PathParameter;
-import com.restify.http.contract.Post;
-import com.restify.http.contract.Put;
-import com.restify.sample.api.MyApiResponse;
+import com.github.ljtfreitas.restify.http.client.Headers;
+import com.github.ljtfreitas.restify.http.client.call.EndpointCall;
+import com.github.ljtfreitas.restify.http.client.request.async.EndpointCallCallback;
+import com.github.ljtfreitas.restify.http.client.request.async.EndpointCallSuccessCallback;
+import com.github.ljtfreitas.restify.http.client.response.EndpointResponse;
+import com.github.ljtfreitas.restify.http.contract.BodyParameter;
+import com.github.ljtfreitas.restify.http.contract.CallbackParameter;
+import com.github.ljtfreitas.restify.http.contract.Delete;
+import com.github.ljtfreitas.restify.http.contract.Get;
+import com.github.ljtfreitas.restify.http.contract.Head;
+import com.github.ljtfreitas.restify.http.contract.Header;
+import com.github.ljtfreitas.restify.http.contract.MultipartParameters;
+import com.github.ljtfreitas.restify.http.contract.Options;
+import com.github.ljtfreitas.restify.http.contract.Path;
+import com.github.ljtfreitas.restify.http.contract.PathParameter;
+import com.github.ljtfreitas.restify.http.contract.Post;
+import com.github.ljtfreitas.restify.http.contract.Put;
+import com.github.ljtfreitas.restify.sample.api.MyApiResponse;
 
 @Path("/api")
 public interface MyApi {

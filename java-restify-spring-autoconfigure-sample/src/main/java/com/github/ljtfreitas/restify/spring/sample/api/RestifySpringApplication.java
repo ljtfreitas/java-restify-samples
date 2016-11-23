@@ -1,4 +1,4 @@
-package com.restify.spring.sample.api;
+package com.github.ljtfreitas.restify.spring.sample.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -9,9 +9,9 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.ListenableFutureCallback;
 
-import com.restify.http.client.Headers;
-import com.restify.http.spring.contract.FormParameters;
-import com.restify.http.spring.contract.FormParameters.Parameter;
+import com.github.ljtfreitas.restify.http.client.Headers;
+import com.github.ljtfreitas.restify.http.spring.contract.FormParameters;
+import com.github.ljtfreitas.restify.http.spring.contract.FormParameters.Parameter;
 
 @SpringBootApplication
 public class RestifySpringApplication implements CommandLineRunner {

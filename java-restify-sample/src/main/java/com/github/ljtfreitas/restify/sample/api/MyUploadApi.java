@@ -1,4 +1,4 @@
-package com.restify.sample.api;
+package com.github.ljtfreitas.restify.sample.api;
 
 import java.io.IOException;
 import java.nio.file.Files;
