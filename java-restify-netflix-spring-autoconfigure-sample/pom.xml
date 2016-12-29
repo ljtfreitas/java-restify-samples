@@ -3,18 +3,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.ljtfreitas</groupId>
-	<artifactId>java-restify-spring-sample</artifactId>
+	<artifactId>java-restify-netflix-spring-autoconfigure-sample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
 		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>java-restify-spring</artifactId>
-			<version>1.1.2-SNAPSHOT</version>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>java-restify-netflix-spring-starter</artifactId>
+			<version>1.1.2-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
@@ -24,7 +24,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
 				<type>pom</type>
-				<version>1.4.1.RELEASE</version>
+				<version>1.4.3.RELEASE</version>
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
@@ -35,7 +35,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
