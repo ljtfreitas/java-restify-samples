@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.github.ljtfreitas</groupId>
+	<artifactId>java-restify-cdi-vraptor-sample</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>java-restify</artifactId>
+			<version>1.2.2-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>java-restify-cdi</artifactId>
+			<version>1.2.2-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>br.com.caelum</groupId>
+			<artifactId>vraptor</artifactId>
+			<version>4.2.0-RC5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.weld</groupId>
+			<artifactId>weld-core</artifactId>
+			<version>2.4.1.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.weld.servlet</groupId>
+			<artifactId>weld-servlet</artifactId>
+			<version>2.4.1.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator-cdi</artifactId>
+			<version>5.1.1.Final</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.3.11.v20160721</version>
+				<configuration>
+					<contextXml>src/main/webapp/WEB-INF/jetty-context.xml</contextXml>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<debug>true</debug>
+					<compilerArgument>-parameters</compilerArgument>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
