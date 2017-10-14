@@ -14,7 +14,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 		clients.inMemory()
 			.withClient("aaa111").secret("bbb222")
-					.authorizedGrantTypes("authorization_code", "client_credentials", "implicit", "password")
+					.scopes("read", "write")
 				.and()
 			.withClient("sample").secret("sample-secret");
 	}
